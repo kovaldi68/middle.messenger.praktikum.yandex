@@ -1,0 +1,24 @@
+# Dependency directories
+node_modules/
+
+# Production
+build/
+
+# JetBrains IDE
+.idea/
+
+# Mac files
+.DS_Store
+
+# Optional eslint cache
+.eslintcache
+
+# Optional npm cache directory
+.npm
+
+#package-lock
+package-lock.json
+
+#parcel-cache
+.parcel-cache
+

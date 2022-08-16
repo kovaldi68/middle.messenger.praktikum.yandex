@@ -1,0 +1,22 @@
+{
+  "name": "messenger-shi-no-ka",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel src/pages/index.hbs --no-cache --port 3000",
+    "start": "parcel build src/pages/index.hbs",
+    "lint": "eslint --ext .js,.jsx .",
+    "lint-fix": "eslint --fix --ext .js,.jsx ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "@parcel/transformer-sass": "^2.7.0",
+    "eslint": "^8.22.0",
+    "handlebars": "^4.7.7",
+    "parcel": "^2.7.0",
+    "sass": "^1.54.4"
+  }
+}
