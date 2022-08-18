@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"ffrey":[function(require,module,exports) {
+})({"1GVyy":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "0465abc2f51f5f75";
+module.bundle.HMR_BUNDLE_ID = "f186c3be869ec2f3";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,8 +531,8 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"4TkCG":[function(require,module,exports) {
+},{}],"7Cupw":[function(require,module,exports) {
 
-},{}]},["ffrey","4TkCG"], "4TkCG", "parcelRequiree496")
+},{}]},["1GVyy","7Cupw"], "7Cupw", "parcelRequiree496")
 
-//# sourceMappingURL=main.f51f5f75.js.map
+//# sourceMappingURL=chat.869ec2f3.js.map

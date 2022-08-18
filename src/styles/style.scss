@@ -9,11 +9,18 @@
 //components
 
 @import './visually-hidden';
-@import '../../src/components/button/button';
+@import '../components/button/button';
 @import '../pages/errorPages/errorPage';
-@import '../components/modal/modal';
+@import '../pages/chat/chat';
 @import '../pages/profile/profile';
 @import '../pages/login/login';
 @import '../pages/signup/signup';
+@import '../components/modal/modal';
 @import '../components/form/form';
 @import '../components/InputBox/InputBox';
+@import '../components/contextMenu/contextMenu';
+@import '../components/chatSidebar/chatSidebar';
+@import '../components/chatList/chatList';
+@import '../components/mainChat/mainChat';
+@import '../components/saveSection/saveSection';
+@import '../components/messageContent/messageContent';
