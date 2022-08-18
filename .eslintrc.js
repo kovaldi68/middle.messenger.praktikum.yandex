@@ -48,7 +48,7 @@ module.exports = {
         ],
         'no-duplicate-imports': 'error',
         'no-unused-expressions': ['error', { allowTernary: true }],
-        'no-useless-rename': 'error',s
+        'no-useless-rename': 'error',
         'padding-line-between-statements': [
             'error',
             { blankLine: 'always', prev: '*', next: 'return' }

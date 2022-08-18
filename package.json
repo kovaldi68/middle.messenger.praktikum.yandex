@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "parcel src/pages/index.hbs --no-cache --port 3000",
-    "start": "parcel build src/pages/index.hbs",
+    "start": "parcel src/pages/index/index.hbs --no-cache --port 3000",
+    "build": "parcel build src/pages/index/index.hbs",
     "lint": "eslint --ext .js,.jsx .",
     "lint-fix": "eslint --fix --ext .js,.jsx ."
   },

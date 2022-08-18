@@ -1,13 +1,19 @@
 //general
 
-// general
-
-@import './normalize.scss';
-@import './variables.scss';
-@import './mixins.scss';
-@import './global.scss';
-@import './z-indexes.scss';
+@import './normalize';
+@import './variables';
+@import './mixins';
+@import './global';
+@import './z-indexes';
 
 //components
 
-@import '../../src/components/button/button.scss';
+@import './visually-hidden';
+@import '../../src/components/button/button';
+@import '../pages/errorPages/errorPage';
+@import '../components/modal/modal';
+@import '../pages/profile/profile';
+@import '../pages/login/login';
+@import '../pages/signup/signup';
+@import '../components/form/form';
+@import '../components/InputBox/InputBox';

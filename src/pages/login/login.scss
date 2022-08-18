@@ -1,0 +1,5 @@
+.login {
+  @include flex-column-center;
+  height: 100%;
+  background-color: $purple-chat-lightest;
+}

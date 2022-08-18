@@ -1,0 +1,54 @@
+.form {
+  @include flex-column-center;
+  padding: 40px 30px 30px;
+  width: 35%;
+  min-width: 340px;
+  background-color: $purple-main;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+  &--login {
+    .form__input-box {
+      &--login {
+        margin-bottom: 29px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 130px;
+      }
+    }
+  }
+
+  &--signup {
+    .form__input-box {
+      &:last-of-type {
+        margin-bottom: 45px;
+      }
+    }
+  }
+}
+
+.form__input-box {
+  margin-bottom: 16px;
+}
+
+.form__title {
+  @include middle-title;
+  margin-bottom: 46px;
+}
+
+.form__link {
+  color: $black;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: underline;
+
+  &:hover, focus {
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $black-opacity-50;
+  }
+}

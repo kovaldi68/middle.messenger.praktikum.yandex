@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../styles/style.scss">
+    <title>Shi no ka messenger</title>
+</head>
+<body>
+    <main class="page-main">
+        <section class="page-signup signup">
+            <form class="signup__form form form--signup">
+                <h2 class="form__title">Sign Up</h2>
+                {{> inputBox className="form" id="signup-mail" type="text" labelText="Email" placeholder="Email" errorMessage="Invalid email"}}
+                {{> inputBox className="form" id="signup-login" type="text" labelText="Login" placeholder="Login" errorMessage="User with this login already exists"}}
+                {{> inputBox className="form" id="signup-firstname" type="text" labelText="First name" placeholder="First name"}}
+                {{> inputBox className="form" id="signup-secondname" type="text" labelText="Second name" placeholder="Second name"}}
+                {{> inputBox className="form" id="signup-phonenumber" type="text" labelText="Phone number" placeholder="Phone number" errorMessage="Enter valid phone number"}}
+                {{> inputBox className="form" id="signup-password" type="password" labelText="Password" placeholder="Password" errorMessage="Passwords do not match"}}
+                {{> inputBox className="form" id="signup-confirm-password" type="password" labelText="Password" placeholder="Password(one more time)" errorMessage="Passwords do not match"}}
+                {{> button className="form" modify="primary" type="submit" buttonText="Log In"}}
+                {{> link className="form" linkText="Already have an account?" }}
+            </form>
+        </section>
+    </main>
+</body>
+</html>
