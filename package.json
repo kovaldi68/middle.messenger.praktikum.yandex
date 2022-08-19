@@ -4,9 +4,10 @@
   "description": "",
   "scripts": {
     "start": "parcel src/pages/index/index.hbs --no-cache --port 3000",
-    "build": "parcel build src/pages/index/index.hbs",
-    "lint": "eslint --ext .js,.jsx .",
-    "lint-fix": "eslint --fix --ext .js,.jsx ."
+    "build": "parcel build src/pages/index/index.hbs"
+  },
+  "engines": {
+    "node": "16.15.1"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
     "@parcel/transformer-sass": "^2.7.0",
     "eslint": "^8.22.0",
+    "express": "^4.18.1",
     "handlebars": "^4.7.7",
     "parcel": "^2.7.0",
     "sass": "^1.54.4"
