@@ -13,28 +13,13 @@
     <title>Shi no ka messenger</title>
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="../chat/chat.hbs">Chat page</a>
-        </li>
-        <li>
-            <a href="../profile/profile.hbs">Profile page</a>
-        </li>
-        <li>
-            <a href="../signup/signup.hbs">Sign Up page</a>
-        </li>
-        <li>
-            <a href="../login/login.hbs">Login page</a>
-        </li>
-        <li>
-            <a href="../errorPages/500.hbs">500 page</a>
-        </li>
-        <li>
-            <a href="../errorPages/404.hbs">404 page</a>
-        </li>
-        <li>
-            <a href="../otherStuff/otherStuff.hbs">Context menus</a>
-        </li>
-    </ul>
+    <main class="page-main">
+        {{> modalAddPhoto }}
+        {{> modalAddUser }}
+        {{> contextMenu }}
+        {{> contextOptions }}
+        {{> userContextOptions }}
+    </main>
+    <script src="./otherStuff.js"></script>
 </body>
 </html>

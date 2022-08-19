@@ -19,16 +19,6 @@
     }
   }
 
-  &--full-height {
-    width: 64px;
-    height: 100%;
-    background-color: $purple-chat-lightest;
-    background-image: url('../img/arrow-back-icon.svg');
-    background-position: center;
-    background-size: 28px;
-    background-repeat: no-repeat;
-  }
-
   &--close {
     position: absolute;
     top: 15px;

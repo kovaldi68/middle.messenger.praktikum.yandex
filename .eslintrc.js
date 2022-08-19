@@ -4,8 +4,6 @@ module.exports = {
         'es2021': true
     },
     'extends': 'eslint:recommended',
-    'overrides': [
-    ],
     'parserOptions': {
         'ecmaVersion': 'latest',
         'sourceType': 'module'
@@ -46,9 +44,6 @@ module.exports = {
                 'after': true
             }
         ],
-        'no-duplicate-imports': 'error',
-        'no-unused-expressions': ['error', { allowTernary: true }],
-        'no-useless-rename': 'error',
         'padding-line-between-statements': [
             'error',
             { blankLine: 'always', prev: '*', next: 'return' }

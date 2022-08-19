@@ -7,10 +7,11 @@
 
 .error-page__title {
   @include largest-title;
+  margin-bottom: 40px;
 }
 
 .error-page__text {
-  width: 380px;
+  width: 400px;
   margin-bottom: 80px;
   font-weight: 500;
   font-size: 32px;

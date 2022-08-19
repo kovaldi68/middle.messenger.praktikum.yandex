@@ -153,6 +153,19 @@
   }
 }
 
+.profile__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 100%;
+  background-color: $purple-chat-lightest;
+  background-image: url('../img/arrow-back-icon.svg');
+  background-position: center;
+  background-size: 28px;
+  background-repeat: no-repeat;
+}
+
 .profile__button {
   display: none;
   color: $white;
