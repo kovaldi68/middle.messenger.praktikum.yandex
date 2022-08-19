@@ -1,6 +1,8 @@
 ### Ссылка на макет проекта в Figma
 [Figma Link](https://www.figma.com/file/NxyJYwvAeJ0tmIFHNY0yi0/Chat_external_link-(Copy)?node-id=0%3A1);
 
+### Ссылка на Netlify
+[Netlify link](https://jazzy-hamster-a0cfdf.netlify.app/);
 
 ### Ветка sprint_1 содержит выполненное задание первого спринта
 
