@@ -4,7 +4,7 @@
 
 ### Ссылка на Netlify
 
-[Netlify link](https://jazzy-hamster-a0cfdf.netlify.app/);
+[Netlify link](https://tiny-kulfi-a98d58.netlify.app);
 
 ### Ветка sprint_1 содержит выполненное задание первого спринта
 
