@@ -1,0 +1,5 @@
+.chat {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  background-color: $purple-chat-lightest;
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='preload' href='../../fonts/open-sans-light.woff2' as='font' type='font/woff2' crossorigin/>
+    <link rel='preload' href='../../fonts/open-sans-regular.woff2' as='font' type='font/woff2' crossorigin/>
+    <link rel='preload' href='../../fonts/open-sans-semibold.woff2' as='font' type='font/woff2' crossorigin/>
+    <link rel='preload' href='../../fonts/open-sans-bold.woff2' as='font' type='font/woff2' crossorigin/>
+    <link rel="stylesheet" href="../../styles/style.scss">
+    <title>Shi no ka messenger</title>
+</head>
+<body style="position: relative">
+    <main class="page-main">
+        {{> mainTitle }}
+        <section class="page-main__profile profile">
+            {{> link className="profile__link" hrefLink="../index/index.hbs"}}
+            <div class="profile__wrapper">
+                <h2 class="profile__user-full-name">Dmitry Kovalenko</h2>
+                <button class="profile__select-photo" type="button"></button>
+                <ul class="profile__user-info-list">
+                    {{> profileInfoItem property="First name" value="Dmitry" type="text"}}
+                    {{> profileInfoItem property="Second name" value="Kovalenko" type="text"}}
+                    {{> profileInfoItem property="Email" value="pochta@yandex.ru" type="text"}}
+                    {{> profileInfoItem property="Login" value="dmitrykovalenko" type="text"}}
+                    {{> profileInfoItem property="Nickname in chat" value="kovaldi" type="text"}}
+                    {{> profileInfoItem property="Phone number" value="+7 (909) 967 30 30" type="text"}}
+                </ul>
+                <ul class="profile__user-password-list">
+                    {{> profileInfoItem property="Password" value="1234567" type="password"}}
+                    {{> profileInfoItem property="Confirm password" value="1234567" type="password"}}
+                </ul>
+                <ul class="profile__user-actives">
+                    <li class="profile__user-active">
+                        {{> link className="profile__user-active-link profile__user-active-link--info" href="/" linkText="Change info"}}
+                    </li>
+                    <li class="profile__user-active">
+                        {{> link className="profile__user-active-link profile__user-active-link--pass" href="/" linkText="Change password"}}
+                    </li>
+                    <li class="profile__user-active">
+                        {{> link className="profile__user-active-link profile__user-active-link--logout" href="/" linkText="Log out"}}
+                    </li>
+                </ul>
+                {{> button className="profile__button profile__button--info button" modify="primary" type="submit" buttonText="Save info" }}
+                {{> button className="profile__button profile__button--password button" modify="primary" type="submit" buttonText="Save password" }}
+            </div>
+        </section>
+    </main>
+<!--    {{> modalAddPhoto }}-->
+</body>
+</html>

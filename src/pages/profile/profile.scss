@@ -1,0 +1,172 @@
+.profile {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  &--edit {
+    .profile__user-actives {
+      display:none;
+    }
+
+    .profile__user-info-value {
+      display: none;
+    }
+
+    .profile__user-info-input {
+      display: block;
+    }
+
+    .profile__button {
+      &--info{
+        display: block;
+      }
+    }
+  }
+
+  &--edit-password {
+    .profile__user-actives {
+      display:none;
+    }
+
+    .profile__user-info-list {
+      display:none;
+    }
+
+    .profile__user-info-input {
+      display: block;
+    }
+
+    .profile__user-info-value {
+      display: none;
+    }
+
+    .profile__user-password-list {
+      display: block;
+    }
+
+    .profile__button {
+      &--password{
+        display: block;
+      }
+    }
+  }
+}
+
+.profile__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  height: 100%;
+}
+
+.profile__user-full-name {
+  @include large-title;
+  margin-bottom: 25px;
+  color: $grey;
+}
+
+.profile__select-photo {
+  position: relative;
+  margin-bottom: 33px;
+  width: 130px;
+  height: 130px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-image: url("../img/avatar-blank.svg");
+  cursor: pointer;
+
+  &:hover {
+    &::before {
+      content: 'Set new avatar';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: $white;
+      border-radius: 50%;
+      background-color: rgba($purple-chat-darkest, 0.5);
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.profile__user-info-list {
+  @include list-reset;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.profile__user-info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid $purple-main;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.profile__user-info-value {
+  color: $grey;
+}
+
+.profile__user-info-input {
+  display: none;
+  width: 50%;
+  background-color: transparent;
+  text-align: right;
+  border: none;
+  outline: none;
+}
+
+.profile__user-password-list {
+  @include list-reset;
+  display: none;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.profile__user-actives {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 50%;
+}
+
+.profile__user-active-link {
+  color: $purple-chat-darkest;
+
+  &--logout {
+    color: $error-red;
+  }
+}
+
+.profile__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 100%;
+  background-color: $purple-chat-lightest;
+  background-image: url('../img/arrow-back-icon.svg');
+  background-position: center;
+  background-size: 28px;
+  background-repeat: no-repeat;
+}
+
+.profile__button {
+  display: none;
+  color: $white;
+}

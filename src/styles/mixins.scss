@@ -1,0 +1,48 @@
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin largest-title {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 102px;
+}
+
+@mixin large-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+@mixin medium-title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+@mixin middle-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@mixin text-medium-bold {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin text-small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
