@@ -1,3 +1,6 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
 .save-section {
   position: fixed;
   bottom: 0;
@@ -75,10 +78,10 @@
   }
 
   &--archive {
-    background-image: url("../img/archive-chat-icon.svg");
+    background-image: url("../../static/img/archive-chat-icon.svg");
   }
 
   &--favs {
-    background-image: url("../img/favs-icon.svg");
+    background-image: url("../../static/img/favs-icon.svg");
   }
 }

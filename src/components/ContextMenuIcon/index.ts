@@ -1,0 +1,1 @@
+export { ContextMenuIcon as default } from './ContextMenuIcon';

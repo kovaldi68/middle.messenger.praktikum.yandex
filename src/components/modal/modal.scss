@@ -1,3 +1,7 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+@import 'src/styles/z-indexes';
+
 .modal {
   position: fixed;
   overflow: auto;

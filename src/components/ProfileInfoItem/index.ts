@@ -1,0 +1,1 @@
+export { ProfileInfoItem as default } from './ProfileInfoItem';

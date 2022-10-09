@@ -1,3 +1,6 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
 .login {
   @include flex-column-center;
   height: 100%;

@@ -1,0 +1,1 @@
+export { ChatSideBar as default } from './ChatSideBar';

@@ -1,3 +1,6 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
 .form {
   @include flex-column-center;
   padding: 40px 30px 30px;

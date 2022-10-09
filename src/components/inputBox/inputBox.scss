@@ -1,3 +1,6 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
 .input-box {
   display: flex;
   flex-direction: column;
@@ -14,7 +17,7 @@
 }
 
 .input-box__input {
-  @include text-medium-bold;
+  font-weight: 500;
   padding: 7px 12px;
   width: 100%;
   background-color: transparent;

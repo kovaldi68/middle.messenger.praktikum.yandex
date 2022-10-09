@@ -1,3 +1,5 @@
+@import 'src/styles/variables';
+
 .button {
   display: inline-flex;
   justify-content: center;
@@ -7,6 +9,11 @@
   outline: none;
   cursor: pointer;
 
+  &:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+
   &--primary {
     margin-bottom: 13px;
     width: 280px;
@@ -14,7 +21,7 @@
     background-color: $black;
     color: $purple-main;
 
-    &:hover, focus {
+    &:hover, &:focus {
       opacity: 0.6;
     }
   }

@@ -1,3 +1,6 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
 .main-chat {
   background-color: $purple-chat-lightest;
 
@@ -44,7 +47,7 @@
     left: 0;
     width: 175px;
     height: 132px;
-    background-image: url("../img/select-chat-arrow.svg");
+    background-image: url("../../static/img/select-chat-arrow.svg");
     background-size: 175px 132px;
     background-position: center;
     background-repeat: no-repeat;
