@@ -1,13 +1,13 @@
 import Block from 'core/Block';
 
-import './modal.scss';
+import '../modal.scss';
 
 export class ModalAddPhoto extends Block {
-  static componentName = "ModalAddPhoto";
+    static componentName = 'ModalAddPhoto';
 
-  protected render(): string {
-    // language=hbs
-    return `
+    protected render(): string {
+        // language=hbs
+        return `
         <div class="modal">
             <div class="modal__wrapper">
                 <h2 class="modal__title">Upload the file</h2>
@@ -18,5 +18,5 @@ export class ModalAddPhoto extends Block {
             </div>
         </div>
     `;
-  }
+    }
 }

@@ -3,9 +3,9 @@ import Block from 'core/Block';
 import '../errorPage.scss';
 
 export class Page404 extends Block {
-  render() {
-    // language=hbs
-    return `
+    render() {
+        // language=hbs
+        return `
         <main class="page-main">
             {{{MainTitle}}}
             <section class="page-main__error-page error-page">
@@ -15,5 +15,5 @@ export class Page404 extends Block {
             </section>
         </main>
     `;
-  }
+    }
 }

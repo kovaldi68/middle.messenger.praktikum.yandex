@@ -1,11 +1,11 @@
 import Block from 'core/Block';
 
 export class OtherStuffPage extends Block {
-  static componentName = "OtherStuffPage";
+    static componentName = 'OtherStuffPage';
 
-  render() {
-    // language=hbs
-    return `
+    render() {
+        // language=hbs
+        return `
         <div>
             {{{ModalAddPhoto}}}
             {{{ModalAddUser}}}
@@ -14,5 +14,5 @@ export class OtherStuffPage extends Block {
             {{{UserContextOptions}}}
         </div>
     `;
-  }
+    }
 }

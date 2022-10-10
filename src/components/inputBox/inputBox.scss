@@ -2,35 +2,35 @@
 @import 'src/styles/mixins';
 
 .input-box {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .input-box__label {
-  @include text-small;
-  margin-bottom: 9px;
+    @include text-small;
+    margin-bottom: 9px;
 }
 
 .input-box__input-wrapper {
-  margin-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 .input-box__input {
-  font-weight: 500;
-  padding: 7px 12px;
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid $black;
+    font-weight: 500;
+    padding: 7px 12px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $black;
 
-  &::placeholder {
-    color: $grey;
-  }
+    &::placeholder {
+        color: $grey;
+    }
 }
 
 .input-box__input-error-message {
-  @include text-small;
-  color: $error-red;
+    @include text-small;
+    color: $error-red;
 }

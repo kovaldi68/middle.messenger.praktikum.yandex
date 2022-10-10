@@ -1,1 +1,1 @@
-export { UserContextOptions as default} from './UserContextOptions';
+export { UserContextOptions } from './UserContextOptions';

@@ -1,8 +1,8 @@
 @import 'src/styles/variables';
 @import 'src/styles/mixins';
 
-.input-box__input-error-message, .profile__input-error-message {
-  @include text-small;
-  color: $error-red;
+.input-box__input-error-message,
+.profile__input-error-message {
+    @include text-small;
+    color: $error-red;
 }
-

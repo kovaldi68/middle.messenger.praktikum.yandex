@@ -1,13 +1,13 @@
-import Block from "core/Block";
+import Block from 'core/Block';
 
-import "./chatList.scss";
+import './chatList.scss';
 
 export class ChatList extends Block {
-  static componentName = "ChatList";
+    static componentName = 'ChatList';
 
-  protected render(): string {
-    // language=hbs
-    return `
+    protected render(): string {
+        // language=hbs
+        return `
         <ul class="chat-sidebar__chat-list chat-list">
             <li class="chat-list__item">
                 <a class="chat-list__link">
@@ -65,5 +65,5 @@ export class ChatList extends Block {
             </li>
         </ul>
     `;
-  }
+    }
 }

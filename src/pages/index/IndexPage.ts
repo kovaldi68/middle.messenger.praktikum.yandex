@@ -1,9 +1,9 @@
 import Block from 'core/Block';
 
 export class IndexPage extends Block {
-  render() {
-    // language=hbs
-    return `
+    render() {
+        // language=hbs
+        return `
         <ul>
             <li>
                 <a href="/chat">Chat page</a>
@@ -28,5 +28,5 @@ export class IndexPage extends Block {
             </li>
         </ul>
     `;
-  }
+    }
 }

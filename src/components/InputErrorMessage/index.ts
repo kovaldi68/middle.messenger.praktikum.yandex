@@ -1,1 +1,1 @@
-export { InputErrorMessage as default } from './InputErrorMessage';
+export { InputErrorMessage } from './InputErrorMessage';

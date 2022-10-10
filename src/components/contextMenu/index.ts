@@ -1,1 +1,1 @@
-export { ContextMenu as default } from './ContextMenu';
+export { ContextMenu } from './ContextMenu';

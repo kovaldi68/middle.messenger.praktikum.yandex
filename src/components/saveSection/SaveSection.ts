@@ -3,11 +3,11 @@ import Block from 'core/Block';
 import './saveSection.scss';
 
 export class SaveSection extends Block {
-  static componentName = "SaveSection";
+    static componentName = 'SaveSection';
 
-  protected render(): string {
-    // language=hbs
-    return `
+    protected render(): string {
+        // language=hbs
+        return `
         <div class="chat-sidebar__save-section save-section save-section--archive">
             <div class="save-section__content save-section__content--archive">
                 <div class="save-section__icon-wrapper">
@@ -27,5 +27,5 @@ export class SaveSection extends Block {
             </div>
         </div>
     `;
-  }
+    }
 }

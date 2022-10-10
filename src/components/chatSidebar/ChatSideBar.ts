@@ -1,13 +1,13 @@
-import Block from "core/Block";
+import Block from 'core/Block';
 
-import "./chatSidebar.scss";
+import './chatSidebar.scss';
 
 export class ChatSideBar extends Block {
-  static componentName = "ChatSideBar";
+    static componentName = 'ChatSideBar';
 
-  protected render(): string {
-    // language=hbs
-    return `
+    protected render(): string {
+        // language=hbs
+        return `
         <div class="chat__chat-side-bar chat-sidebar">
             <div class="chat-sidebar__profile-section">
                 <div class="chat-sidebar__user-avatar-wrapper">
@@ -25,5 +25,5 @@ export class ChatSideBar extends Block {
             {{{SaveSection}}}
         </div>
     `;
-  }
+    }
 }

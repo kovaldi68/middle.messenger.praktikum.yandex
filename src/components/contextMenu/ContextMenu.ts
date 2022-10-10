@@ -1,21 +1,21 @@
-import Block from "core/Block";
+import Block from 'core/Block';
 
-import "./contextMenu.scss";
+import './contextMenu.scss';
 
 interface ContextMenuProps {
-  className: string;
+    className: string;
 }
 
 export class ContextMenu extends Block {
-  static componentName = "ContextMenu";
+    static componentName = 'ContextMenu';
 
-  constructor({ className }: ContextMenuProps) {
-    super({ className });
-  }
+    constructor({ className }: ContextMenuProps) {
+        super({ className });
+    }
 
-  protected render(): string {
-    // language=hbs
-    return `
+    protected render(): string {
+        // language=hbs
+        return `
         <ul class="{{ className }}__context-menu context-menu">
             <li class="context-menu__item">
                 <a class="context-menu__link">
@@ -55,5 +55,5 @@ export class ContextMenu extends Block {
             </li>
         </ul>
     `;
-  }
+    }
 }

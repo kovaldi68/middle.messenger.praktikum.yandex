@@ -4,11 +4,11 @@ import './mainChat.scss';
 import './messageContent.scss';
 
 export class MainChat extends Block {
-  static componentName = "MainChat";
+    static componentName = 'MainChat';
 
-  protected render(): string {
-    // language=hbs
-    return `
+    protected render(): string {
+        // language=hbs
+        return `
         <div class="chat__main-chat main-chat main-chat--active">
             <div class="main-chat__empty">
                 <span class="main-chat__select-text">Who would you like to talk to ?</span>
@@ -104,5 +104,5 @@ export class MainChat extends Block {
             </div>
         </div>
     `;
-  }
+    }
 }

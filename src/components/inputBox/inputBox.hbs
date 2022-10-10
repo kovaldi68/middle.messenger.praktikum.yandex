@@ -1,7 +1,13 @@
-<div class="{{ className}}__input-box input-box {{ className}}__input-box--{{ id }}">
-    <label class="input-box__label" for="{{ id }}-input">{{ labelText }}</label>
-    <div class="input-box__input-wrapper input-box__input-wrapper--{{ id }}">
-        <input class="input-box__input" id="{{ id }}-input" name="{{ id }}-input" type="{{ type }}" placeholder="{{ placeholder }}"/>
-    </div>
-    <span class="input-box__input-error-message visually-hidden">{{ errorMessage }}</span>
+<div class="{{className}}__input-box input-box {{className}}__input-box--{{id}}">
+  <label class="input-box__label" for="{{id}}-input">{{labelText}}</label>
+  <div class="input-box__input-wrapper input-box__input-wrapper--{{id}}">
+    <input
+      class="input-box__input"
+      id="{{id}}-input"
+      name="{{id}}-input"
+      type="{{type}}"
+      placeholder="{{placeholder}}"
+    />
+  </div>
+  <span class="input-box__input-error-message visually-hidden">{{errorMessage}}</span>
 </div>

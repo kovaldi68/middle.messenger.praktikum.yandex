@@ -1,1 +1,1 @@
-export { ProfileInfoItem as default } from './ProfileInfoItem';
+export { ProfileInfoItem } from './ProfileInfoItem';

@@ -2,45 +2,45 @@
 @import 'src/styles/mixins';
 
 .context-menu {
-  @include list-reset;
-  padding: 11px 13px;
-  width: max-content;
-  max-width: 250px;
-  background-color: $white;
-  box-shadow: 0px 0px 6px rgba($black, 0.14);
-  border-radius: 12px;
+    @include list-reset;
+    padding: 11px 13px;
+    width: max-content;
+    max-width: 250px;
+    background-color: $white;
+    box-shadow: 0px 0px 6px rgba($black, 0.14);
+    border-radius: 12px;
 }
 
 .context-menu__item {
-  border-bottom: 1px solid $purple-chat-light;
+    border-bottom: 1px solid $purple-chat-light;
 
-  &:last-child {
-    border-bottom: none;
-  }
+    &:last-child {
+        border-bottom: none;
+    }
 }
 
 .context-menu__link {
-  display: flex;
-  align-items: center;
-  padding: 3px;
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    cursor: pointer;
 }
 
 .context-menu__image-wrapper {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-  min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    min-width: 24px;
 }
 
 .context-menu__image {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .context-menu__text {
-  @include text-medium-bold;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    @include text-medium-bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

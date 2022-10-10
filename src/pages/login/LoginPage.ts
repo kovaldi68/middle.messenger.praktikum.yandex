@@ -1,74 +1,74 @@
-import Block from "core/Block";
+import Block from 'core/Block';
 
-import "./login.scss";
-import "components/Form/form.scss";
-import { validateForm } from "pages/utils/validateForm";
+import './login.scss';
+import 'components/Form/form.scss';
+import { validateForm } from '../../utils/validateForm';
 
 export class LoginPage extends Block {
-  constructor() {
-    super();
+    constructor() {
+        super();
 
-    this.setProps({
-      error: "",
-      loginValue: "",
-      passwordValue: "",
-      onInput: (e: InputEvent) => {
-        this.checkInput(e);
-      },
-      onFocus: (e: FocusEvent) => {
-        this.checkInput(e);
-      },
-      onLogin: () => {
-        const loginInput = this.element?.querySelector(
-          'input[name="login"]'
-        ) as HTMLInputElement;
-        const passwordInput = this.element?.querySelector(
-          'input[name="password"]'
-        ) as HTMLInputElement;
+        this.setProps({
+            error: '',
+            loginValue: '',
+            passwordValue: '',
+            onInput: (e: InputEvent) => {
+                this.checkInput(e);
+            },
+            onFocus: (e: FocusEvent) => {
+                this.checkInput(e);
+            },
+            onLogin: () => {
+                const loginInput = this.element?.querySelector(
+                    'input[name="login"]'
+                ) as HTMLInputElement;
+                const passwordInput = this.element?.querySelector(
+                    'input[name="password"]'
+                ) as HTMLInputElement;
 
-        const errorMessage = validateForm([
-          { type: loginInput.name, value: loginInput.value },
-          { type: passwordInput.name, value: passwordInput.value }
-        ]);
+                const errorMessage = validateForm([
+                    { type: loginInput.name, value: loginInput.value },
+                    { type: passwordInput.name, value: passwordInput.value }
+                ]);
 
-        if (errorMessage) {
-          this.setProps({
-            error: errorMessage,
-            loginValue: loginInput.value,
-            passwordValue: passwordInput.value
-          });
-        } else {
-          this.setProps({
-            error: "",
-            loginValue: loginInput.value,
-            passwordValue: passwordInput.value
-          });
+                if (errorMessage) {
+                    this.setProps({
+                        error: errorMessage,
+                        loginValue: loginInput.value,
+                        passwordValue: passwordInput.value
+                    });
+                } else {
+                    this.setProps({
+                        error: '',
+                        loginValue: loginInput.value,
+                        passwordValue: passwordInput.value
+                    });
 
-          console.log("Data:", {
-            Login: this.props.loginValue,
-            Password: this.props.passwordValue
-          });
+                    console.log('Data:', {
+                        Login: this.props.loginValue,
+                        Password: this.props.passwordValue
+                    });
+                }
+            }
+        });
+    }
+
+    checkInput(e: FocusEvent | InputEvent) {
+        const inputEl = e.target as HTMLInputElement;
+        const errorMessage = validateForm([{ type: inputEl.name, value: inputEl.value }]);
+
+        if (inputEl.name === 'login') {
+            this.refs.loginRef.refs.errorRef.setProps({ errorMessage: errorMessage });
         }
-      }
-    });
-  }
 
-  checkInput(e: FocusEvent | InputEvent) {
-    const inputEl = e.target as HTMLInputElement;
-    const errorMessage = validateForm([{ type: inputEl.name, value: inputEl.value }]);
-
-    if (inputEl.name === "login") {
-      this.refs.loginRef.refs.errorRef.setProps({ errorMessage: errorMessage });
+        if (inputEl.name === 'password') {
+            this.refs.passwordRef.refs.errorRef.setProps({ errorMessage: errorMessage });
+        }
     }
 
-    if (inputEl.name === "password") {
-      this.refs.passwordRef.refs.errorRef.setProps({ errorMessage: errorMessage });
-    }
-  }
-
-  render() {
-    // language=hbs
-    return `
+    render() {
+        // language=hbs
+        return `
       <main class="page-main">
         <section class="page-main__login login">
             <form class="login__form form form--login">
@@ -107,5 +107,5 @@ export class LoginPage extends Block {
         </section>
       </main>
     `;
-  }
+    }
 }

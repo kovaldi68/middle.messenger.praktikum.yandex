@@ -1,13 +1,13 @@
 import Block from 'core/Block';
 
-import './modal.scss';
+import '../modal.scss';
 
 export class ModalAddUser extends Block {
-  static componentName = "ModalAddUser";
+    static componentName = 'ModalAddUser';
 
-  protected render(): string {
-    // language=hbs
-    return `
+    protected render(): string {
+        // language=hbs
+        return `
         <div class="modal">
             <div class="modal__wrapper">
                 <h2 class="modal__title">Add user</h2>
@@ -17,5 +17,5 @@ export class ModalAddUser extends Block {
             </div>
         </div>
     `;
-  }
+    }
 }

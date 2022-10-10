@@ -1,4 +1,4 @@
-export enum VALIDATE_TYPE {
+export enum ValidateType {
     Login = 'login',
     Password = 'password',
     ConfirmPassword = 'confirmpassword',
@@ -22,13 +22,13 @@ const START_CAPITAL_REG_EXP = /^[А-ЯЁA-Z]{1}/;
 const EMAIL_REG_EXP = /^[a-zA-Z0-9._-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,6}$/;
 const PHONE_NUMBER_REG_EXP = /^[\d\+][\d]{9,14}\d$/;
 
-export function validateForm(rules: ValidateRules[] ) {
-    let errorMessage = ''
+export function validateForm(rules: ValidateRules[]) {
+    let errorMessage = '';
 
     for (let i = 0; i < rules.length; i++) {
         const { type, value } = rules[i];
 
-        if (type === VALIDATE_TYPE.Login || type === VALIDATE_TYPE.NickName) {
+        if (type === ValidateType.Login || type === ValidateType.NickName) {
             if (value.length === 0) {
                 errorMessage = 'This field is required';
                 break;
@@ -36,12 +36,13 @@ export function validateForm(rules: ValidateRules[] ) {
                 errorMessage = 'Login should contain from 3 to 20 characters';
                 break;
             } else if (!LOGIN_REG_EXP.test(value)) {
-                errorMessage = 'The login should start with Latin letters, can contain numbers, but not consist of them, without spaces, without special characters (hyphens and underscores are allowed';
+                errorMessage =
+                    'The login should start with Latin letters, can contain numbers, but not consist of them, without spaces, without special characters (hyphens and underscores are allowed';
                 break;
             }
         }
 
-        if (type === VALIDATE_TYPE.Password || type === VALIDATE_TYPE.ConfirmPassword) {
+        if (type === ValidateType.Password || type === ValidateType.ConfirmPassword) {
             if (value.length === 0) {
                 errorMessage = 'This field is required';
                 break;
@@ -54,12 +55,13 @@ export function validateForm(rules: ValidateRules[] ) {
             }
         }
 
-        if (type === VALIDATE_TYPE.FirstName || type === VALIDATE_TYPE.SecondName) {
+        if (type === ValidateType.FirstName || type === ValidateType.SecondName) {
             if (value.length === 0) {
                 errorMessage = 'This field is required';
                 break;
             } else if (!NAME_REG_EXP.test(value)) {
-                errorMessage = 'Name should contain from 2 to 20 characters without numbers and special symbols, except "-"';
+                errorMessage =
+                    'Name should contain from 2 to 20 characters without numbers and special symbols, except "-"';
                 break;
             } else if (!START_CAPITAL_REG_EXP.test(value)) {
                 errorMessage = 'Name should start with capital letter';
@@ -67,27 +69,29 @@ export function validateForm(rules: ValidateRules[] ) {
             }
         }
 
-        if (type === VALIDATE_TYPE.Email) {
+        if (type === ValidateType.Email) {
             if (value.length === 0) {
                 errorMessage = 'This field is required';
                 break;
             } else if (!EMAIL_REG_EXP.test(value)) {
-                errorMessage = 'Email can contain letters and numbers, special symbols like underscore, dash and dot. Example: exma-ple@exp.com';
+                errorMessage =
+                    'Email can contain letters and numbers, special symbols like underscore, dash and dot. Example: exma-ple@exp.com';
                 break;
             }
         }
 
-        if (type === VALIDATE_TYPE.PhoneNumber) {
+        if (type === ValidateType.PhoneNumber) {
             if (value.length === 0) {
                 errorMessage = 'This field is required';
                 break;
             } else if (!PHONE_NUMBER_REG_EXP.test(value)) {
-                errorMessage = 'Phone number can start with digit or "+". Should contain from 10 to 15 characters.';
+                errorMessage =
+                    'Phone number can start with digit or "+". Should contain from 10 to 15 characters.';
                 break;
             }
         }
 
-        if (type === VALIDATE_TYPE.Message) {
+        if (type === ValidateType.Message) {
             if (value.length === 0) {
                 errorMessage = 'The message can not be empty =)';
                 break;

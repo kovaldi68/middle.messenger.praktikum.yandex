@@ -2,15 +2,15 @@
 @import 'src/styles/mixins';
 
 .input-box__input {
-  font-weight: 500;
-  padding: 7px 12px;
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid $black;
+    font-weight: 500;
+    padding: 7px 12px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $black;
 
-  &::placeholder {
-    color: $grey;
-  }
+    &::placeholder {
+        color: $grey;
+    }
 }

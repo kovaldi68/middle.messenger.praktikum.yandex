@@ -3,11 +3,11 @@ import Block from 'core/Block';
 import '../contextOptions.scss';
 
 export class UserContextOptions extends Block {
-  static componentName = "UserContextOptions";
+    static componentName = 'UserContextOptions';
 
-  protected render(): string {
-    // language=hbs
-    return `
+    protected render(): string {
+        // language=hbs
+        return `
         <ul class="context-options">
             <li class="context-options__item">
                 <button class="context-options__button" type="button">
@@ -31,5 +31,5 @@ export class UserContextOptions extends Block {
             </li>
         </ul>
     `;
-  }
+    }
 }

@@ -1,1 +1,1 @@
-export { ContextOptions as default } from './ContextOptions';
+export { ContextOptions } from './ContextOptions';

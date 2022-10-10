@@ -1,1 +1,1 @@
-export { ProfileInput as default } from './ProfileInput';
+export { ProfileInput } from './ProfileInput';

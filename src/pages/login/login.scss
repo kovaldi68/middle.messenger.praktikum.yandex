@@ -2,8 +2,8 @@
 @import 'src/styles/mixins';
 
 .login {
-  @include flex-column-center;
-  height: 100%;
-  padding: 30px;
-  background-color: $purple-chat-lightest;
+    @include flex-column-center;
+    height: 100%;
+    padding: 30px;
+    background-color: $purple-chat-lightest;
 }
