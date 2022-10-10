@@ -1,0 +1,8 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+.signup {
+    @include flex-column-center;
+    padding: 30px;
+    background-color: $purple-chat-lightest;
+}

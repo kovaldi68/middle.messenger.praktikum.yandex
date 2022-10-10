@@ -1,45 +1,49 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+@import 'src/styles/z-indexes';
+
 .modal {
-  position: fixed;
-  overflow: auto;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal__wrapper {
-  @include flex-column-center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  padding: 40px 30px;
-  width: 340px;
-  background-color: $white;
-  transform: translate(-50%, -50%);
-  border: 2px solid $purple-chat-darkest;
-  border-radius: 12px;
-  z-index: $z-index-5;
+    @include flex-column-center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: 40px 30px;
+    width: 340px;
+    background-color: $white;
+    transform: translate(-50%, -50%);
+    border: 2px solid $purple-chat-darkest;
+    border-radius: 12px;
+    z-index: $z-index-5;
 }
 .modal__title {
-  @include medium-title;
-  margin-bottom: 50px;
+    @include medium-title;
+    margin-bottom: 50px;
 }
 
 .modal__input-box {
-  margin-bottom: 33px;
+    margin-bottom: 33px;
 }
 
 .modal__file-input {
-  margin-bottom: 33px;
-  display: none;
+    margin-bottom: 33px;
+    display: none;
 }
 
 .modal__file-label {
-  margin-bottom: 45px;
-  width: 60%;
-  text-decoration: underline;
-  text-align: center;
-  color: $purple-chat-darkest;
-  cursor: pointer;
+    margin-bottom: 45px;
+    width: 60%;
+    text-decoration: underline;
+    text-align: center;
+    color: $purple-chat-darkest;
+    cursor: pointer;
 }

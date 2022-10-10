@@ -1,12 +1,20 @@
+### Update проекта:
+
+- Добавлен TypeScript
+- Использован EventBut и базовый класс Block
+- Проект переписан на компоненты
+
 ### Ссылка на макет проекта в Figma
 
-[Figma Link](https://www.figma.com/file/NxyJYwvAeJ0tmIFHNY0yi0/Chat_external_link-(Copy)?node-id=0%3A1);
+[Figma InputBox](https://www.figma.com/file/NxyJYwvAeJ0tmIFHNY0yi0/Chat_external_link-(Copy)?node-id=0%3A1);
 
 ### Ссылка на Netlify
 
 [Netlify link](https://tiny-kulfi-a98d58.netlify.app);
 
 ### Ветка sprint_1 содержит выполненное задание первого спринта
+### Ветка sprint_2 содержит выполненное задание второго спринта
+[Spint_2 PullRequest Link](https://github.com/kovaldi68/middle.messenger.praktikum.yandex/pull/2);
 
 ### Подготовлена вёрстка страниц(по названиям директорий):
 

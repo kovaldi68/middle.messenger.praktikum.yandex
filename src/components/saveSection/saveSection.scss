@@ -1,84 +1,88 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
 .save-section {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 300px;
-  padding: 14px 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: $purple-main;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    padding: 14px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: $purple-main;
 
-  &--archive {
-    .save-section__content--archive {
-      display: grid;
+    &--archive {
+        .save-section__content--archive {
+            display: grid;
+        }
     }
-  }
 
-  &--favs {
-    .save-section__content--favs {
-      display: grid;
+    &--favs {
+        .save-section__content--favs {
+            display: grid;
+        }
     }
-  }
 }
 
 .save-section__content {
-  display: none;
-  grid-template-areas:
-          "icon name button"
-          "icon text button";
-  gap: 10px;
+    display: none;
+    grid-template-areas:
+        'icon name button'
+        'icon text button';
+    gap: 10px;
 }
 
 .save-section__icon-wrapper {
-  grid-area: icon;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 47px;
-  height: 47px;
-  border-radius: 50%;
-  background-color: $purple-chat-dark;
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: $purple-chat-dark;
 }
 
 .save-section__icon {
-  width: 28px;
-  height: 28px;
+    width: 28px;
+    height: 28px;
 }
 
 .save-section__name {
-  grid-area: name;
-  @include text-small;
-  font-weight: 700;
+    grid-area: name;
+    @include text-small;
+    font-weight: 700;
 }
 
 .save-section__message-text {
-  grid-area: text;
-  @include text-small;
-  color: $black-opacity-50;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    grid-area: text;
+    @include text-small;
+    color: $black-opacity-50;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .save-section__button {
-  grid-area: button;
-  margin: auto;
-  border-radius: 10px;
-  background-color: $purple-chat-light;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
+    grid-area: button;
+    margin: auto;
+    border-radius: 10px;
+    background-color: $purple-chat-light;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
 
-  &:hover, &:focus {
-    background-color: $purple-chat-dark;
-  }
+    &:hover,
+    &:focus {
+        background-color: $purple-chat-dark;
+    }
 
-  &--archive {
-    background-image: url("../img/archive-chat-icon.svg");
-  }
+    &--archive {
+        background-image: url('../../static/img/archive-chat-icon.svg');
+    }
 
-  &--favs {
-    background-image: url("../img/favs-icon.svg");
-  }
+    &--favs {
+        background-image: url('../../static/img/favs-icon.svg');
+    }
 }

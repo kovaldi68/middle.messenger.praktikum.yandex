@@ -16,7 +16,7 @@
     <main class="page-main">
         {{> mainTitle }}
         <section class="page-main__profile profile">
-            {{> link className="profile__link" hrefLink="../index/index.hbs"}}
+            {{> link className="profile__link" hrefLink="../index/Login.hbs"}}
             <div class="profile__wrapper">
                 <h2 class="profile__user-full-name">Dmitry Kovalenko</h2>
                 <button class="profile__select-photo" type="button"></button>
@@ -43,11 +43,11 @@
                         {{> link className="profile__user-active-link profile__user-active-link--logout" href="/" linkText="Log out"}}
                     </li>
                 </ul>
-                {{> button className="profile__button profile__button--info button" modify="primary" type="submit" buttonText="Save info" }}
-                {{> button className="profile__button profile__button--password button" modify="primary" type="submit" buttonText="Save password" }}
+                {{> button className="profile__button profile__button--info Button" modify="primary" type="submit" buttonText="Save info" }}
+                {{> button className="profile__button profile__button--password Button" modify="primary" type="submit" buttonText="Save password" }}
             </div>
         </section>
     </main>
-<!--    {{> modalAddPhoto }}-->
+    {{!-- {{{modalAddPhoto}}} --}}
 </body>
 </html>
