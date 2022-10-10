@@ -3,32 +3,32 @@ import { renderDOM, registerComponent } from './core';
 
 import './styles/style.scss';
 
-import { Button } from 'components/Button';
-import { ChatSideBar } from 'components/ChatSideBar';
-import { MainChat } from 'components/MainChat';
-import { ChatList } from 'components/ChatList';
-import { SaveSection } from 'components/SaveSection';
-import { Link } from 'components/Link';
-import { InputBox } from 'components/InputBox';
-import { ProfileInfoItem } from 'components/ProfileInfoItem';
-import { MainTitle } from 'components/MainTitle';
-import { ContextMenu } from 'components/ContextMenu';
-import { ContextMenuIcon } from 'components/ContextMenuIcon';
-import { ContextOptions } from 'components/ContextOptions';
-import { Input } from 'components/Input';
-import { InputErrorMessage } from 'components/InputErrorMessage';
-import { ProfileInput } from 'components/ProfileInput';
-import { ModalAddPhoto } from 'components/Modal/ModalAddPhoto';
-import { ModalAddUser } from 'components/Modal/ModalAddUser';
+import { Button } from './components/Button';
+import { ChatSideBar } from './components/ChatSideBar';
+import { MainChat } from './components/MainChat';
+import { ChatList } from './components/ChatList';
+import { SaveSection } from './components/SaveSection';
+import { Link } from './components/Link';
+import { InputBox } from './components/InputBox';
+import { ProfileInfoItem } from './components/ProfileInfoItem';
+import { MainTitle } from './components/MainTitle';
+import { ContextMenu } from './components/ContextMenu';
+import { ContextMenuIcon } from './components/ContextMenuIcon';
+import { ContextOptions } from './components/ContextOptions';
+import { Input } from './components/Input';
+import { InputErrorMessage } from './components/InputErrorMessage';
+import { ProfileInput } from './components/ProfileInput';
+import { ModalAddPhoto } from './components/Modal/ModalAddPhoto';
+import { ModalAddUser } from './components/Modal/ModalAddUser';
 
-import { IndexPage } from 'pages/index/IndexPage';
-import { Page404 } from 'pages/errorPages/Page404/Page404';
-import { Page500 } from 'pages/errorPages/Page500/Page500';
-import { LoginPage } from 'pages/login/LoginPage';
-import { ChatPage } from 'pages/chat/ChatPage';
-import { SignupPage } from 'pages/signup/SignupPage';
-import { Profile } from 'pages/profile/Profile';
-import { OtherStuffPage } from 'pages/otherStuff/OtherStuffPage';
+import { IndexPage } from './pages/index/IndexPage';
+import { Page404 } from './pages/errorPages/Page404/Page404';
+import { Page500 } from './pages/errorPages/Page500/Page500';
+import { LoginPage } from './pages/login/LoginPage';
+import { ChatPage } from './pages/chat/ChatPage';
+import { SignupPage } from './pages/signup/SignupPage';
+import { Profile } from './pages/profile/Profile';
+import { OtherStuffPage } from './pages/otherStuff/OtherStuffPage';
 
 //components
 registerComponent(Button);
